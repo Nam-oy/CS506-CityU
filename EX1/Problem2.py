@@ -24,6 +24,10 @@ def addDigits(num: int) -> int:
 
 Formula = addDigits(num)
 print ("Formula : ",Formula )
+
+
+
+
 # following formula:
 # Digital Root=1+(num−1)%9
 
