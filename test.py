@@ -1,3 +1,12 @@
 while 4 == 4 :
+    print( '4' )
+    break
+else:
+    print("test option else block")
 
-print ( '4' )
+
+while 1 == 4 :
+    print( '4' )
+    break
+else:
+    print("test option else block")
