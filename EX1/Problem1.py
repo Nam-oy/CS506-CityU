@@ -15,20 +15,18 @@ step = Reduced_to_Zero(num)
 print ("Output : ", step)
 
 
+Num = int(input())
+print("Input Num = 14" + str(Num))
 
+Output = 0
+while Num > 0:
+    if (Num % 2) != 0:
+        Num = Num - 1
+        Output += 1
+    else: 
+        Num = Num // 2
+        Output += 1
 
-# Num = int(input())
-# print("Input Num = 14" + str(Num))
-
-# Output = 0
-# while Num > 0:
-#     if (Num % 2) != 0:
-#         Num = Num - 1
-#         Output += 1
-#     else: 
-#         Num = Num // 2
-#         Output += 1
-
-# print("Output : " + str(Output))
+print("Output : " + str(Output))
 
 
