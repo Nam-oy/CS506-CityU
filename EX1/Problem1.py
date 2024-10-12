@@ -1,32 +1,16 @@
-def Reduced_to_Zero(num):
-    Output = 0
-    while num > 0:
-        if (num % 2) != 0:
+
+def Reduced_to_Zero(num):       # Define function
+    Output = 0                  # To count the number of the steps
+    while num > 0:              # Loop to reduced to zero
+        if (num % 2) != 0:      # Check odd and even --if odd -> subtract 1 -> Increment step counter
             num = num - 1
-            Output += 1
-        else:
+            Output += 1         
+        else:                   # -- else -> even -> Increment step counter
             num = num // 2
-            Output += 1
+            Output += 1         
     return Output
 
 
-num = 14
-step = Reduced_to_Zero(num)
-print ("Output : ", step)
-
-
-Num = int(input())
-print("Input Num = 14" + str(Num))
-
-Output = 0
-while Num > 0:
-    if (Num % 2) != 0:
-        Num = Num - 1
-        Output += 1
-    else: 
-        Num = Num // 2
-        Output += 1
-
-print("Output : " + str(Output))
-
-
+num = int(input())              #Get User input
+step = Reduced_to_Zero(num)     #Call the function
+print ("Input: ",num,"Output: ",step) #Show the result
