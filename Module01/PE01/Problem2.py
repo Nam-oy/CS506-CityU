@@ -13,3 +13,17 @@ Output = Add_Digits(num)                        #Call the function
 print ("Input : ", num, "Output :", Output )    #Show the result
 
 
+
+
+
+# following formula:
+# Digital Root=1+(num−1)%9
+def addDigits(num: int) -> int:
+    if num == 0:
+        return 0
+    return 1 + (num - 1) % 9
+
+Formula = addDigits(num)
+print ("Formula : ",Formula )
+
+
